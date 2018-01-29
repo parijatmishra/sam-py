@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - pip install pytest
-  pre-build:
+  pre_build:
     commands:
       - pytest
   build:
