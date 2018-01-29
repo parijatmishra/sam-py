@@ -1,6 +1,12 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - pip install pytest
+  pre-build:
+    commands:
+      - pytest
   build:
     commands:
       - pip install --upgrade awscli
